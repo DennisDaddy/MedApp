@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
 
   
-  get 'sessions/new'
+ 
 
   root 'pages#home'
 
@@ -11,6 +11,13 @@ Rails.application.routes.draw do
   get 'contact' => 'pages#contact'
 
   get 'signup' => 'users#new'
+
+  get  'login' => 'sessions#new'
+
+  post  'login' => 'sessions#create'
+
+  delete  'logout' => 'sessions#destroy'
+
 
   resources :users
 
