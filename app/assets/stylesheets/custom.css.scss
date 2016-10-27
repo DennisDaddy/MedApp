@@ -151,6 +151,23 @@ width: auto;
 margin-left: 0;
 }
 
+
+/* Users index */
+
+.users {
+list-style: none;
+margin: 0;
+li {
+overflow: auto;
+padding: 10px 0;
+border-bottom: 1px solid $gray-lighter;
+}
+}
+
+
+
+
+
 /* Header */
 #head { background:#181015 url(fish.jpg) no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
